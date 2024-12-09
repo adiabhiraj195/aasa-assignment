@@ -1,0 +1,79 @@
+.auth-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    padding: 20px 50px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 500px ;
+}
+
+.auth-logo {
+    width: 80px;
+    height: 80px;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.auth-logo>img {
+    width: 120%;
+}
+.auth-heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.password-input-container{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.forgot-pass-link{
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    margin-left: 2px;
+}
+.auth-btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.auth-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.base-bg-btn{
+    background: none;
+    color: rgb(0, 47, 255);
+}
+.base-bg-btn:hover{
+    background: rgb(233, 233, 233);
+}
+.blue-bg-btn{
+    background-color: rgb(0, 47, 255);
+    color: white;
+}
+.blue-bg-btn:hover{
+    background-color: rgb(0, 17, 255);
+}

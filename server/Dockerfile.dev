@@ -1,0 +1,27 @@
+FROM node:alpine
+
+WORKDIR /app
+
+COPY package.json ./
+COPY package-lock.json ./
+
+RUN npm install
+
+COPY . .
+
+ENV  PORT=8000
+ENV  ACCESS_TOKEN_SECRET=15455f84bb348b4a36109fc1dc857dfbf19784b70f9799011085a831c0f597953ae6c0be2925b4c00193dace92f2ee4e5b5c6bf6eeb078da8b30868ca07977f5
+ENV  REFRESH_TOKEN_SECRET=76fc228e0dd030eca3a58f1142608fc1b69a43fb1f18150585409b014139e0ee28da14b3facb3d087b46984421975ccb79a2084d8e7dd4678847badd1e69a08b
+ENV  ACCESS_TOKEN_EXPIRATION=24h
+ENV  REFRESH_TOKEN_EXPIRATION=2h
+ENV  SMTP_HOST=smtp.gmail.com
+ENV  SMTP_USER=featherDocs@gmail.com
+# ENV  SMTP_PASSWORD "bpvf tchz ekya kczv"
+ENV  FRONT_END_URL=http://localhost:3000
+ENV  DB_NAME=feathar-docs
+ENV  DB_USER=root
+ENV  DB_PASSWORD=abhiyadav141
+ENV  DB_HOST=127.0.0.1
+ENV  DB_TYPE=mysql
+
+CMD [ "npm", "run", "watch" ]
